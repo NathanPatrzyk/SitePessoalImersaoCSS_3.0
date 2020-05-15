@@ -1,0 +1,138 @@
+/* Soft Reset do CSS ... */
+
+header{
+    height:50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #D6E8EE;
+    background-size:
+      auto 50vh;
+    font-family:
+        'Spartan', sans-serif;
+    height:100vh;
+    font-size: 12px;
+}
+
+/* Se for maior que 400px, rodara este estilo : */
+@media( min-width: 400px ){
+    body{
+        font-size: 16px;
+    }
+}
+
+@media( min-width: 600px ){
+    body{
+        font-size: 20px;
+    }
+}
+
+.menu{
+    background-color: #001848;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    display: block;
+    padding: 10px 30px;
+}
+
+a{
+    color:#97CADB;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #018ABE;
+    text-decoration: none;
+}
+  
+.site-subtitle,
+.site-title{
+    color: #02457A;
+    text-align: center;
+}
+  
+.site-subtitle{
+    color: #001848;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.site-title{
+    font-size: 3em;
+    font-family: 'Bungee Shade', cursive;
+}
+
+.portfolio{
+    padding: 3em;
+}
+
+.portfolio h2{
+    color: #001848;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2em;
+}
+
+.portfolio h3{
+    color: #02557A; 
+    font-family: 'Press Start 2P', cursive; 
+    margin-bottom:  3em;
+    font-size: 16px;
+}
+
+.portfolio .grid{
+    display: grid;
+    gap: 2e
+}
+
+@media (min-width: 560px) {
+    .portfolio .grid{
+        grid-template-columns: repeat(2,260px);
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 880px){
+    .portfolio .grid{
+        grid-template-columns: repeat(2,350px);
+        align-content: center;
+        justify-content: center;
+        height: calc(100vh -48px -8em);
+    }
+}
+
+.portfolio figure{
+    text-align: center;
+}
+
+.img-portfolio{
+    height:180px;
+    width:240px;
+    object-fit: cover;
+    border-radius: 60px;
+}
+
+figcaption{
+    color:#02457A;
+    margin-bottom: 1em;
+}
+
